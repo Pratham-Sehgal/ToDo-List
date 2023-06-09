@@ -106,6 +106,10 @@ text-transform: capitalize;
     .center div {
       width: 55%;
     }
+    .center{
+      width: 80%;
+      margin: 20px 0px;
+    }
       .todo_style .fa-times {
       margin: 0 15px 0 15px;
       display: flex;
