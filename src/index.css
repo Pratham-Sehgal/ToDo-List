@@ -102,7 +102,7 @@ text-transform: capitalize;
 .todo_style .fa-times:hover .list_style {
      color:rebeccapurple
   }
-  @media (max-width:768px) {
+  @media (max-width:900px) {
     .center div {
       width: 55%;
     }
