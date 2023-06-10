@@ -1,9 +1,26 @@
 import React, { useState } from "react";
 import TodoLists from "./TodoLists";
 
+// get the data 
+const getLocalI=()=>{
+  let list=localStorage.getItem('ListOfItems');
+  if(list){
+    return JSON.parse(localStorage.getItem('ListOfItems'));
+  }else{
+    return [];
+  }
+ }
+
 const App=()=>{
   const [inputList,setInputList]=useState("");
-  const [item,setItem]=useState([]);
+  const [item,setItem]=useState(getLocalI());
+
+ 
+  // to set the local storage
+  useEffect(()=>{
+localStorage.setItem('ListOfItems',JSON.stringify(item));
+  },[item])
+
 
 
 
